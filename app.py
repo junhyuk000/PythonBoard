@@ -9,6 +9,8 @@ app = Flask(__name__)
 app.secret_key = 'your-secret-key'
 # app.config['UPLOAD_FOLDER'] = 'static/uploads'
 app.config['UPLOAD_FOLDER'] = os.path.join(app.root_path, 'static','uploads')
+
+# 디렉토리 생성
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 

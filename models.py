@@ -63,7 +63,7 @@ class DBManager:
             return []
         finally:
             self.disconnect()
-            
+    # 포스트 추가
     def insert_post(self, title, content, filename, userid, username):
         try:
             self.connect()
