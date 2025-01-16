@@ -6,7 +6,7 @@ from models import DBManager
 
 
 app = Flask(__name__)
-app.secret_key = 'your-secret-key'
+app.secret_key = 'your-secret-key234'
 # app.config['UPLOAD_FOLDER'] = 'static/uploads'
 app.config['UPLOAD_FOLDER'] = os.path.join(app.root_path, 'static','uploads')
 
